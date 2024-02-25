@@ -7,29 +7,35 @@ name = "dash-dlp"
 dynamic = ["version"]
 description = 'A dashboard frontend for yt-dlp'
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 license = "MIT"
 keywords = []
 authors = [
   { name = "Adrian Strzała", email = "adrianstrzala@gmail.com" },
 ]
 classifiers = [
-  "Development Status :: 4 - Beta",
+  "Development Status :: 2 - Pre-Alpha",
   "Programming Language :: Python",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: Implementation :: CPython",
-  "Programming Language :: Python :: Implementation :: PyPy",
+  "Framework :: Dash",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Topic :: Multimedia :: Sound/Audio",
+  "Topic :: Multimedia :: Video",
+  "Topic :: Utilities",
+  "Typing :: Typed",
 ]
 dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/unknown/dash-dlp#readme"
-Issues = "https://github.com/unknown/dash-dlp/issues"
-Source = "https://github.com/unknown/dash-dlp"
+Documentation = "https://github.com/a-strzala/dash-dlp#readme"
+Issues = "https://github.com/a-strzala/dash-dlp/issues"
+Source = "https://github.com/a-strzala/dash-dlp"
 
 [tool.hatch.version]
 path = "src/dash_dlp/__about__.py"
@@ -52,7 +58,7 @@ cov = [
 ]
 
 [[tool.hatch.envs.all.matrix]]
-python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+python = ["3.10", "3.11", "3.12"]
 
 [tool.hatch.envs.types]
 dependencies = [
